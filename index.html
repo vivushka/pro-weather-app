@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherNOW</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ca32c82184.js" crossorigin="anonymous"></script>
+  </head>
+   
+  <body>
+   <div class="container">
+      <div class="weather-app">
+          <form class="search-city" id="search-city">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="search"
+                  placeholder="Enter city name"
+                  autofocus="on"
+                  autocomplete="off"
+                  id="city-input"
+                  class="form-control shadow-sm"
+                />
+              </div>
+              <div class="col-2">
+                <input
+                  type="button"
+                  value="🌐"
+                  class="btn btn-outline-info btn-geo"/>
+              </div>
+              <div class="col-4">
+                <input
+                  type="submit"
+                  value="Find"
+                  class="form-control btn btn-primary shadow-sm w-100 btn-orange" />
+              </div>
+              </div>
+          </form>
+           <br />
+<div class="row">
+  <div class="col-12"> 
+    <div class="mx-auto" style="width: 300px;">
+    <div class="card-body text-dark"></div>
+    <h1><i class="fa-solid fa-cloud-sun main-icon"></i></h1>
+    <h2 class="card-title" id="current-city"><strong>Kitchener,</strong> CA</h2>
+    <p class="card-text" id="today">Monday, 02 May</p>
+   
+      <h3>
+        <div class="main-temperature" ><strong id="main-temperature">16 </strong>
+        <span class="units">
+          <a href="#" id="celsius-link">°C</a> |
+          <a href="#" id="fahrenheit-link">°F</a></span>
+        </div>
+      </h3>
+    
+  <hr />
+  
+  <div class="row">
+    <div class="col">
+     <p> Wind 💨<strong><span id = "wind" >19</span> m/s</strong></p>
+    </div>
+    
+    <div class="col">
+      <p>Feels like 🌡️<strong><span id = "feels-like"19 >14</span>°</strong></p>
+    </div>
+    
+  </div>
+ </div></div> 
+ <br />
+<h4 class="next-days">
+   Next four days
+ </h4>
+<hr class="line">
+
+</div>
+ <div class="days">
+   <div class="row">
+     <div class="col-3">
+       <p>
+       03 May<br/>
+       <i class="fa-solid fa-sun"></i><br />
+       <strong>20°</strong>
+       </p>
+     </div>
+     <div class="col-3">
+       <p>
+       04 May<br/>
+      <i class="fa-solid fa-cloud"></i><br />
+       <strong>16°</strong>
+       </p>
+     </div>
+     <div class="col-3">
+       <p>
+       05 May<br/>
+       <i class="fa-solid fa-cloud-showers-heavy"></i><br />
+       <strong>14°</strong>
+       </p>
+     </div>
+     <div class="col-3">
+       <p>
+       06 May<br/>
+       <i class="fa-solid fa-cloud-sun"></i><br />
+       <strong>17°</strong>
+       </p>
+     </div>
+</div>
+<script src="src/javascript.js"></script>
+</body>
+</html>
+
+    
+  
+      
+      
+  
+  
+    
+
+
+    
+
+    
+    
+      
+        
+       
+
+    
+  
+      
+      
+  
+  
+    
+
+
+    
+
+    
+    
+      
+        
+       

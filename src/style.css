@@ -1,0 +1,106 @@
+body {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(242, 235, 243) 0%,
+    rgb(234, 241, 249) 90.1%
+  );
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Exo", sans-serif;
+}
+p {
+  font-family: "Radio Canada", sans-serif;
+  font-size: 16px;
+}
+input.btn-orange {
+  background-color: #ffa726;
+  border: none;
+  height: 38px;
+  font-weight: 600;
+}
+
+input.btn-orange:hover,
+.btn-orange:focus,
+.btn-orange:active {
+  background-color: #e89923;
+  color: #fcfcfc;
+}
+
+.days {
+  text-align: center;
+}
+
+.line {
+  border-top: 2px solid #70ca74;
+}
+.next-days {
+  font-size: 15px;
+  color: #e5b062;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+#search-city {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#city-input {
+  border: 1px solid #70ca74;
+}
+p.card-text {
+  margin-bottom: 0px;
+  font-size: 12px;
+  font-weight: 300;
+  color: rgb(106, 108, 108);
+}
+p.card-time {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(106, 108, 108);
+}
+
+.main-temperature {
+  font-size: 50px;
+  margin: 10px 0px 10px;
+}
+.col-12 {
+  text-align: center;
+}
+.col-sm-4 {
+  display: block;
+  margin: 0 auto;
+}
+.units {
+  font-size: 15px;
+}
+
+.weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 50px 100px 30px;
+  background-color: rgb(246, 248, 249);
+  color: #223444;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 2px solid #70ca74;
+}
+
+.mx-auto {
+  border: 5px solid #70ca74;
+  border-radius: 5px;
+  padding: 0 10px 5px;
+  margin-top: 20px;
+}
+.main-icon {
+  color: black;
+  font-size: 35px;
+  margin: 5px;
+}
+.card-title {
+  color: rgb(15, 15, 16);
+  font-size: 30px;
+}
