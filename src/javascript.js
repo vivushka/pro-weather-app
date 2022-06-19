@@ -55,15 +55,19 @@ function find(event) {
 function displayWeather(response) {
   console.log(response.data);
 
-  document.querySelector("#current-city").innerHTML = response.data.name;
-  document.querySelector("#main-temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
-  document.querySelector("#wind").innerHTML = Math.round(
-    response.data.wind.speed
-  );
-  document.querySelector("#feels-like").innerHTML = Math.round(
-    response.data.main.feels_like
+  let temperatureElement = document.querySelector("#main-temperature");
+  let cityElement = document.querySelector("#current-city");
+  let windElement = document.querySelector("#wind");
+  let feelElement = document.querySelector("#feels-like");
+  let iconElement = document.querySelector("#main-icon");
+
+  cityElement.innerHTML = response.data.name;
+  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+  feelElement.innerHTML = Math.round(response.data.main.feels_like);
+  iconElement.setAttribute(
+    "src",
+    `images/${response.data.weather[0].icon}.svg`
   );
 }
 
