@@ -104,6 +104,9 @@ currentButton.addEventListener("click", getCurrentPosition);
 
 function convertToFahrenheit(event) {
   event.preventDefault();
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+
   let temperatureElement = document.querySelector("#main-temperature");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
@@ -116,6 +119,9 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 function convertToCelsius(event) {
   event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+
   let temperatureElement = document.querySelector("#main-temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }

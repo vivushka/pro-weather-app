@@ -99,6 +99,13 @@ p.card-time {
   border-radius: 5px;
   padding: 0px 10px 5px;
 }
+.mx-auto .active {
+  color: black;
+  cursor: default;
+}
+.mx-auto .active:hover {
+  text-decoration: none;
+}
 .main-icon {
   color: black;
   font-size: 35px;
