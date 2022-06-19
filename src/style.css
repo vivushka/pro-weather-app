@@ -102,8 +102,6 @@ p.card-time {
 .mx-auto .active {
   color: black;
   cursor: default;
-}
-.mx-auto .active:hover {
   text-decoration: none;
 }
 .main-icon {
