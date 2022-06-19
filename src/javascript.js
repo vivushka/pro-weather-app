@@ -57,14 +57,18 @@ function displayWeather(response) {
 
   let temperatureElement = document.querySelector("#main-temperature");
   let cityElement = document.querySelector("#current-city");
+  // let countryElement = document.querySelector("#current-country");
+  let descriptionElement = document.querySelector("#current-description");
   let windElement = document.querySelector("#wind");
   let feelElement = document.querySelector("#feels-like");
   let iconElement = document.querySelector("#main-icon");
 
   celsiusTemperature = response.data.main.temp;
 
-  cityElement.innerHTML = response.data.name;
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  cityElement.innerHTML = response.data.name;
+  // countryElement.innerHTML = response.data.sys.country;
+  descriptionElement.innerHTML = response.data.weather[0].description;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   feelElement.innerHTML = Math.round(response.data.main.feels_like);
   iconElement.setAttribute(

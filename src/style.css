@@ -17,7 +17,7 @@ p {
 }
 img {
   position: relative;
-  top: -20px;
+  top: -30px;
   max-width: 150px;
 }
 input.btn-orange {
@@ -113,7 +113,14 @@ p.card-time {
 }
 .card-title {
   position: relative;
-  top: -20px;
+  top: -30px;
   color: rgb(15, 15, 16);
   font-size: 25px;
+}
+p.description {
+  margin-top: -40px;
+  font-size: 15px;
+}
+p.description:first-letter {
+  text-transform: capitalize;
 }
