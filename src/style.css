@@ -34,10 +34,6 @@ input.btn-orange:hover,
   color: #fcfcfc;
 }
 
-.days {
-  text-align: center;
-}
-
 .line {
   border-top: 2px solid #70ca74;
 }
@@ -121,4 +117,19 @@ p.description {
 }
 p.description:first-letter {
   text-transform: capitalize;
+}
+.weather-forecast {
+  text-align: center;
+  color: #000;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 15px;
 }

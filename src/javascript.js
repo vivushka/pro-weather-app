@@ -52,6 +52,30 @@ function find(event) {
   axios.get(apiUrl).then(displayWeather);
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Wed", "Thu", "Fri", "Sat"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-3">
+    <div class="weather-forecast-date">${day}</div>
+     <i class="fa-solid fa-sun"></i>
+     <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperature-max"> 20° </span>
+          <span class="weather-forecast-temperature-min"> 12° </span>
+     </div> 
+     </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+
 function displayWeather(response) {
   console.log(response.data);
 
@@ -131,3 +155,5 @@ function convertToCelsius(event) {
 }
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
+
+displayForecast();
