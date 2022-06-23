@@ -88,7 +88,7 @@ function displayWeather(response) {
 
   let temperatureElement = document.querySelector("#main-temperature");
   let cityElement = document.querySelector("#current-city");
-  // let countryElement = document.querySelector("#current-country");
+  let countryElement = document.querySelector("#current-country");
   let descriptionElement = document.querySelector("#current-description");
   let windElement = document.querySelector("#wind");
   let feelElement = document.querySelector("#feels-like");
@@ -98,7 +98,7 @@ function displayWeather(response) {
 
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
-  // countryElement.innerHTML = response.data.sys.country;
+  countryElement.innerHTML = response.data.sys.country;
   descriptionElement.innerHTML = response.data.weather[0].description;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   feelElement.innerHTML = Math.round(response.data.main.feels_like);
@@ -131,6 +131,14 @@ function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let currentTemperature = document.querySelector("#main-temperature");
   currentTemperature.innerHTML = `${temperature}`;
+
+  let descriptionElement = document.querySelector("#current-description");
+  let windElement = document.querySelector("#wind");
+  let feelElement = document.querySelector("#feels-like");
+
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+  feelElement.innerHTML = Math.round(response.data.main.feels_like);
 
   document.querySelector("#current-city").innerHTML = response.data.name;
 }
