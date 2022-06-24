@@ -15,11 +15,12 @@ p {
   font-family: "Radio Canada", sans-serif;
   font-size: 16px;
 }
-img {
+#main-icon {
   position: relative;
   top: -30px;
   max-width: 150px;
 }
+
 input.btn-orange {
   background-color: #ffa726;
   border: none;
@@ -100,11 +101,7 @@ p.card-time {
   cursor: default;
   text-decoration: none;
 }
-.main-icon {
-  color: black;
-  font-size: 35px;
-  margin: 5px;
-}
+
 .card-title {
   position: relative;
   top: -30px;
