@@ -123,24 +123,7 @@ function myPosition(position) {
   let apiKey = "c1f9fba0b38d3c38890fede647fd29cb";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
 
-  axios.get(apiUrl).then(showTemperature);
-}
-
-function showTemperature(response) {
-  console.log(response);
-  let temperature = Math.round(response.data.main.temp);
-  let currentTemperature = document.querySelector("#main-temperature");
-  currentTemperature.innerHTML = `${temperature}`;
-
-  let descriptionElement = document.querySelector("#current-description");
-  let windElement = document.querySelector("#wind");
-  let feelElement = document.querySelector("#feels-like");
-
-  descriptionElement.innerHTML = response.data.weather[0].description;
-  windElement.innerHTML = Math.round(response.data.wind.speed);
-  feelElement.innerHTML = Math.round(response.data.main.feels_like);
-
-  document.querySelector("#current-city").innerHTML = response.data.name;
+  axios.get(apiUrl).then(displayWeather);
 }
 
 let currentButton = document.querySelector(".btn-geo");
