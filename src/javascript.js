@@ -44,7 +44,6 @@ todayElement.innerHTML = formatDate(currentDate);
 function find(event) {
   event.preventDefault();
   let city = document.querySelector("#city-input").value;
-
   let apiKey = "c1f9fba0b38d3c38890fede647fd29cb";
   let units = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
